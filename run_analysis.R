@@ -62,7 +62,7 @@ names(merged_data) <- gsub("-", "", names(merged_data))
 # [5] From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 melted_data <- melt(merged_data,(id.vars=c("subject","activity")))
 tidy_data <- dcast(melted_data, subject + activity ~ variable, mean)
-names(tidy_data)[-c(1,2))] <- paste("Average[", names(tidy_data)[-c(1,ncol(tidy_data))], "]", sep="")
+names(tidy_data)[-c(1,2)] <- paste("Average[", names(tidy_data)[-c(1,ncol(tidy_data))], "]", sep="")
 
 setwd("..")
 write.csv(tidy_data, file="tidy_data.csv")
