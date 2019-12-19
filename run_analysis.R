@@ -66,4 +66,4 @@ names(tidy_data)[-c(1,2)] <- paste("Average[", names(tidy_data)[-c(1,ncol(tidy_d
 
 setwd("..")
 write.csv(tidy_data, file="tidy_data.csv")
-write.table(tidy_data, file="tidy_data.txt")
+write.table(tidy_data, file="tidy_data.txt", row.name=FALSE)
