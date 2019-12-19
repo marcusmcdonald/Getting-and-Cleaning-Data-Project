@@ -10,6 +10,7 @@ This repository contains the following files:
 - `CodeBook.md` - Describes the variables, the data, and transformations needed to produce tidy_data.csv.
 - `run_analysis.R` - Consolidates data and performs transformations on the data.
 - `tidy_data.csv` - The product output from `run_analysis.R` script.
+- `tidy_data.txt` - The product output from `run_analysis.R` script. Removes row names.
 
 ## More on CodeBook.md
 
@@ -19,6 +20,6 @@ The codebook does contain some information found in the original source material
 
 The run_analysis.R script is setup to retrieve, extract and process the original data set. The user only needs to "source" the R file in an active R session to begin. The script will check for and attempt to install any required libraries needed. Currently, the only non-base library needed is reshape2. Upon completion the tidy_data.csv is created. If the script was started from inside the R console all variables and intermediate work products will still be available to the user (these are described in the codebook).
 
-## More on tidy_data.csv
+## More on tidy_data.csv and tidy_data.txt
 
-While tidy_data.csv has been committed to the repository, it will be generated each time the run_analysis.R script is executed (should result in the same content each time). 
+While tidy_data.csv and tidy_data.txt have been committed to the repository, they will be generated each time the run_analysis.R script is executed (should result in the same content each time). 
